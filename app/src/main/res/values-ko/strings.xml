@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_batch_qr">배치 QR코드 만들기</string>
+    <string name="start_decoding_batch_qr">배치 QR코드 해석</string>
+    <string name="permission_granted">권한을 얻었습니다. 다시 시도해 보세요.</string>
+    <string name="permission_not_granted">권한을 얻지 못했습니다. 카메라 관련 기능은 사용할 수 없습니다.</string>
+    <string name="already_scanned_datacontainer">이 컨테이너는 이미 읽었습니다. 다른 QR 코드를 시도해 보세요.</string>
+    <string name="decoding_routine_failed">데이터를 전부 입력 받았지만 왠지 해석에 실패했습니다. 원하는 경우 다시 시도해 보세요.</string>
+    <string name="malformed_datacontainer">QR 코드에서 검증 데이터를 읽는데에 실패했습니다. 잘못된 코드를 스캔하지 않았나요?</string>
+    <string name="no_dataContainer_found">QR 코드가 컨테이너를 담고 있지 않습니다.</string>
+    <string name="object_data_null">오브젝트 데이터가 null입니다. 원할 경우 다시 시도해 보세요.</string>
+    <string name="wrong_container_scanned">잘못된 컨테이너를 스캔했습니다. 다른 QR 코드를 시도해 보세요.</string>
+    <string name="xx_to_go"> 개 남음</string>
+    <string name="no_data_to_decode">PGP 블럭이나 base64 인코딩 된 컨테이너가 발견되지 않았습니다. 잘못된 코드를 스캔하지 않았나요?</string>
+</resources>

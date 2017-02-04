@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BatchQRPGP</string>
+    <string name="start_decoding_batch_qr">Start Decoding Batch QR</string>
+    <string name="create_batch_qr">Create Batch QR</string>
+    <string name="permission_granted">Permission granted, please try again.</string>
+    <string name="permission_not_granted">Permission is not granted, you will not be able to use camera feature of this app.</string>
+    <string name="no_dataContainer_found">QR code does not contain serialized dataContainer.</string>
+    <string name="malformed_datacontainer">Cannot read verification data from QR code, maybe you scanned the wrong code?</string>
+    <string name="already_scanned_datacontainer">This container is already scanned. Scan another QR code.</string>
+    <string name="wrong_container_scanned">Wrong container scanned, try another QR code.</string>
+    <string name="decoding_routine_failed">Somehow decoding failed, despite all datas are here. Try again if you want.</string>
+    <string name="object_data_null">Somehow object data is null. Try again if you want.</string>
+    <string name="xx_to_go">" more to go"</string>
+    <string name="no_data_to_decode">No PGP block or base64 encoded container found. Maybe wrong QR code?</string>
+</resources>
