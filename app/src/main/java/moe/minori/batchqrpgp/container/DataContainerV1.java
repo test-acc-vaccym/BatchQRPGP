@@ -36,7 +36,7 @@ public class DataContainerV1 implements DataContainer
 		else
 		{
 			// Warning, generic datatype decoding is not implemented (cannot be implemented)
-			actualData = Constants.DATATYPE_GENERIC;
+			actualDataType = Constants.DATATYPE_GENERIC;
 		}
 	}
 
