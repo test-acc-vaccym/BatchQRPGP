@@ -84,6 +84,7 @@ public class MainActivity extends Activity
 				{
 					Toast.makeText(this, R.string.permission_not_granted, Toast.LENGTH_SHORT).show();
 				}
+				break;
 		}
 	}
 }
