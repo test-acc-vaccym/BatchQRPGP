@@ -16,6 +16,7 @@ public class MainActivity extends Activity
 {
 
 	private static final int CAMERA_PERMISSION = 1;
+	private static final int EXTERNAL_STORAGE_PERMISSIONS = 2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -42,7 +43,17 @@ public class MainActivity extends Activity
 		}
 		else if (view.getId() == R.id.createQRBtn)
 		{
-			//TODO: Implement
+			if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
+					ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
+			{
+				ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,
+						Manifest.permission.WRITE_EXTERNAL_STORAGE}, EXTERNAL_STORAGE_PERMISSIONS);
+			}
+			else
+			{
+				Intent intent = new Intent(this, QRGenerationActivity.class);
+				startActivity(intent);
+			}
 		}
 	}
 
@@ -55,6 +66,17 @@ public class MainActivity extends Activity
 		{
 			case CAMERA_PERMISSION:
 				if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+				{
+					Toast.makeText(this, R.string.permission_granted, Toast.LENGTH_SHORT).show();
+				}
+				else
+				{
+					Toast.makeText(this, R.string.permission_not_granted, Toast.LENGTH_SHORT).show();
+				}
+				break;
+			case EXTERNAL_STORAGE_PERMISSIONS:
+				if (grantResults.length >= 2 && grantResults[0] == PackageManager.PERMISSION_GRANTED &&
+						grantResults[1] == PackageManager.PERMISSION_GRANTED)
 				{
 					Toast.makeText(this, R.string.permission_granted, Toast.LENGTH_SHORT).show();
 				}

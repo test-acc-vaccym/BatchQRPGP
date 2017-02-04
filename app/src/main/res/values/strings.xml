@@ -3,7 +3,7 @@
     <string name="start_decoding_batch_qr">Start Decoding Batch QR</string>
     <string name="create_batch_qr">Create Batch QR</string>
     <string name="permission_granted">Permission granted, please try again.</string>
-    <string name="permission_not_granted">Permission is not granted, you will not be able to use camera feature of this app.</string>
+    <string name="permission_not_granted">Permission is not granted, you will not be able to use permission related feature of this app.</string>
     <string name="no_dataContainer_found">QR code does not contain serialized dataContainer.</string>
     <string name="malformed_datacontainer">Cannot read verification data from QR code, maybe you scanned the wrong code?</string>
     <string name="already_scanned_datacontainer">This container is already scanned. Scan another QR code.</string>
@@ -12,4 +12,9 @@
     <string name="object_data_null">Somehow object data is null. Try again if you want.</string>
     <string name="xx_to_go">" more to go"</string>
     <string name="no_data_to_decode">No PGP block or base64 encoded container found. Maybe wrong QR code?</string>
+    <string name="plain_type_qrs_is_more_efficient_in_terms_of_size_but_does_not_have_advanced_features_such_as_automatically_ordering_qrs_while_decoding_etc_which_can_cause_more_problems_compared_to_datacontainer_qrs">Plain type QRs is more efficient in terms of size, but does not have advanced features such as automatically ordering QRs while decoding, etc. which can cause more problems compared to datacontainer QRs.</string>
+    <string name="datacontainer_qrs_can_contain_text_or_binary_data_and_support_advanced_features_such_as_automatically_ordering_qrs_while_decoding_detecting_foreign_datacontainer_apos_s_qr_while_decoding_etc">Datacontainer QRs can contain text or binary data, and support advanced features such as automatically ordering QRs while decoding, detecting foreign datacontainer\'s QR while decoding, etc.</string>
+    <string name="continueStr">Continue</string>
+    <string name="plain_type_qrs">Plain type QRs</string>
+    <string name="datacontainer_qrs">Datacontainer QRs</string>
 </resources>
