@@ -7,4 +7,5 @@ Apache License 2.0
 
 # Third Party Licenses
 ZXing - Apache License 2.0
+
 QRGenerator - MIT License
