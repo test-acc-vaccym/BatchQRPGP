@@ -10,4 +10,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="moe.minori.batchqrpgp.activity.QRGenerationActivity">
 
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plain_type_qrs"
+        android:id="@+id/plainTypeQRRadioBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datacontainer_qrs"
+        android:id="@+id/dataContainerQRRadioBtn"
+        android:checked="false"
+        android:layout_below="@+id/plainTypeQRRadioBtnTextView"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plain_type_qrs_is_more_efficient_in_terms_of_size_but_does_not_have_advanced_features_such_as_automatically_ordering_qrs_while_decoding_etc_which_can_cause_more_problems_compared_to_datacontainer_qrs"
+        android:id="@+id/plainTypeQRRadioBtnTextView"
+        android:layout_below="@+id/plainTypeQRRadioBtn"
+        android:layout_alignStart="@+id/plainTypeQRRadioBtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datacontainer_qrs_can_contain_text_or_binary_data_and_support_advanced_features_such_as_automatically_ordering_qrs_while_decoding_detecting_foreign_datacontainer_apos_s_qr_while_decoding_etc"
+        android:id="@+id/dataContainerQRRadioBtnTextView"
+        android:layout_below="@+id/dataContainerQRRadioBtn"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continueStr"
+        android:id="@+id/continueBtn"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
