@@ -32,7 +32,6 @@
             android:text="@string/create_batch_qr"
             android:id="@+id/createQRBtn"
             android:onClick="onClick"
-            android:enabled="false"
             android:layout_below="@+id/startDecodingBtn"
             android:layout_centerHorizontal="true"/>
 
